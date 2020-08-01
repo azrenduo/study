@@ -1,0 +1,39 @@
+﻿浏览器与内核
+IE                trident
+Firefox            Gecko
+Google Chrome    Webkit/blink
+Safari             Webkit
+Opera            presto
+
+css权重
+!important >行间样式>id>class|属性>标签选择器>通配符
+
+!important	 infinity
+行间样式		1000
+id		100
+class 属性 伪类 	10
+标签 伪元素	1
+通配符		0
+
+256进制
+
+
+
+标签归类
+1.行级元素  	span      strong      em      a      del
+feature：	内容决定元素所占位置
+	不可以通过css改变宽高
+	自带displya:inline;
+
+2.块级元素：	div      p      ul      li      ol     form   address	
+feature：	独占一行
+	可以通过css改变宽高
+	自带displya:block;
+3.行级块元素：img
+feature：	内容决定大学
+	可以改宽高
+	自带displya:inline-block;
+
+
+
+body天生自带8像素的margin
