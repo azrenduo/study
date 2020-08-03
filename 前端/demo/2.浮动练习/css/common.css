@@ -1,0 +1,21 @@
+/* 多页面通用样式 */
+
+.pager {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.pager a {
+    border: 1px solid #0f0f0f;
+    padding: 5px 10px;
+}
+
+.pager a:hover {
+    border-color: #ef4238;
+}
+
+.parger a.select {
+    background: #ef4238;
+    color: #fff;
+    border: none;
+}
