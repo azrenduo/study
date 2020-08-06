@@ -32,7 +32,7 @@ HTML：Hyper Text Mark Language，超文本标记语言
 <h1>这是一个一级标题</h1>
 ```
 
-MDN：Mozilla Development Network Mozilla ，开发者社区。(https://developer.mozilla.org/zh-CN/)
+MDN：Mozilla Development Network Mozilla ，[开发者社区](https://developer.mozilla.org/zh-CN/)。
 
 ## 什么是 css
 

@@ -33,8 +33,7 @@ p {
 ### 属性选择器
 
 ```css
-[id="Attribute"] {
-}
+[id="Attribute"] {}
 ```
 
 ### 伪类选择器
@@ -46,24 +45,25 @@ p {
 3. 超链接未访问时的状态：link
 4. 超链接访问过后的状态：visited
    书写顺序：link > visited > hover > active
-
+5. 第一个子元素：first-child
+6. 子元素第一指定类型元素：first-of-type
+7. 最后一个子元素：last-child
+8. 子元素最后一个指定类型的元素：last-of-type
+9. 选中指定的几个子元素：nth-child(n)  even:等同于2n   odd等同于2n+1
+10. 选中指定的几个类型的子元素：nth-of-type
+> 含type的选择器忽略其他元素
 ```css
-:hover {
-}
-:active {
-}
-:visited {
-}
-:link {
-}
-:visited {
-}
+div:hover {}
 ```
 
 ### 伪元素选择器
 
-before
-after
+1. before
+2. after
+3. 选中元素中的第一个字：first-letter
+4. 选中元素中第一行的文字：first-line
+5. 选中被用户框选的文字：selection
+
 可以使用 content 属性添加文本内容，并且 content 只能在伪元素中使用
 
 ```css
@@ -101,6 +101,12 @@ strong,
 span {
 }
 ```
+
+
+
+
+# css样式
+[CSS速查词典](https://www.w3cschool.cn/css/dict)
 
 # 层叠
 
@@ -506,3 +512,8 @@ z-index 可以是负数，如果是负数，则常规流
 每个颜色都具有透明通道，0~1
 1. rgba(红,绿,蓝,透);
 2. hex:#红绿蓝透
+
+
+# 盒子隐藏
+1. display:none; 不生成盒子，有可能改变其他盒子的布局
+2. visibility：hidden；生成盒子，不影响盒子类型，从视觉上移除盒子。
