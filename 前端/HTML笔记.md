@@ -493,3 +493,315 @@ aside 元素：通常用于表示一些附加的东西(侧边栏)
 2. a 元素中几乎可以包含任何元素
 3. 某些元素有固定的子元素(ul>li,ol>li,dl>dt+dd)
 4. 标题元素和段落元素不能相互嵌套，并且不能包含容器元素
+
+# iframe 元素
+
+通常用于在一个页面中嵌入另一个页面
+
+iframe 可替换元素
+
+1. 通常是行盒
+2. 通常显示的内容取决于元素的属性
+3. CSS 不能完全控制其中的样式
+4. 具有行块盒的特点
+
+# 使用 flash
+
+object
+
+embed
+
+都是可替换元素
+
+1. data、src
+   资源路径
+
+2. type
+3. [MIME(Multipurpose Internet Mail Extensions)](https://baike.baidu.com/item/MIME/2900607?fr=aladdin)多用途互联网邮件类型
+   object 使用 param 传参
+   embed 直接写
+
+兼容
+
+```html
+<object data="" type="">
+<embed data="" type="">
+</object>
+```
+
+# 表单元素
+
+一系列元素，主要用于收集用户数据
+
+## input 元素
+
+输入框
+
+- type:输入框类型
+  text 普通文本输入框
+  passworld 密码输入框
+  date 日期选择框(兼容性问题)
+  search 搜索框(兼容性问题)
+  range 滑块框(兼容性问题) min max
+  color 颜色选择
+  number 数字输入框 min max step
+  checkbox 多选框 用 name 分组 使用 check 默认选中
+  radio 单选框 用 name 分组 使用 check 默认选中
+  file 选择文件
+  [type 总](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input)
+- value:输入框内容
+- placeholder:当文本框没有内容时，显示提示文本
+
+input 用元素制作按钮
+type 为 reset(重置)、button(普通按钮)、submit(提交)时，input 表示按钮。可以通过 value 改变文本
+
+## select 元素
+
+下拉列表选择框
+通常与 option 元素配合使用
+使用 optgroup 分组
+对 optgroup 使用 label 属性显示分组名字
+使用 select 默认选中
+多选 multiple
+
+## textarea 元素
+
+文本域，多行文本框
+> cols横向多少个文字
+> rows 纵向多少行
+没有空白折叠
+
+
+## button元素
+
+type属性：reset、button、submit默认值submit
+
+## 表单状态
+
+readonly属性 只读 布尔属性 不会改变表单显示样式
+disabled属性 是否禁用 布尔属性 改变表单显示样式
+
+## 配合表单元素的其他元素
+
+### label
+
+普通元素，通常配合单选盒多选框使用
+- 显示关联
+通过for属性关联表单元素的id
+- 隐式关联
+
+```html
+<label>
+<input type="radio" value="demo">
+</label>
+```
+
+### datalist
+
+该元素本身不会显示到页面，通常用于和普通文本框配合
+input的list属性可以通过id查询datalist的option内容
+
+
+### form元素
+通常，会将整个表单元素，放置form元素的内部，作用是当提交表单是，会将form元素内部的表单内容以合适的方式提交到服务器。
+
+表单元素必须写name属性
+
+form元素对开发静态页面没有什么意义
+
+action 提交给谁，不写时默认为提交给本地
+method 提交方式
+  - post
+  - get
+
+### fieldest 元素
+
+表单分组
+
+legend作为子元素表示分组的标题
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
