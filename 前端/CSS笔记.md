@@ -536,4 +536,20 @@ z-index 可以是负数，如果是负数，则常规流
 
 ## 常见用法
 
-1. 重置表单元素样式 
+1. 重置表单元素样式 (myform.css)
+2. 设置textarea是否允许调整尺寸
+
+css属性resize:
+
+- both:默认值，两个方向都可以调整尺寸
+- noone:不能调整尺寸
+- horizontal：水平方向可以调整尺寸
+- vertical：垂直方向可以调整尺寸
+
+3. 文本框到边缘的距离
+
+- 设置padding
+- 设置text-indent
+
+4. 控制单选和多选的样式
+详情[表单美化练习](demo/6.表单美化练习/index.html)

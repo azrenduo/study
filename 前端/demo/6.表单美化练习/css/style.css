@@ -1,0 +1,31 @@
+.radio-item .radio {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.radio-item input[type="radio"] {
+    display: none;
+}
+
+.radio-item .radio:checked~span {
+    color: #008c8c;
+}
+
+.radio-item .radio:checked+.radio {
+    border-color: #008c8c;
+}
+
+.radio-item .radio:checked+.radio::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #008c8c;
+    margin-left: 1px;
+    margin-top: 1px;
+    border-radius: 50%;
+}
