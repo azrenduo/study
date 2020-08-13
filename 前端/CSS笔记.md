@@ -1,5 +1,7 @@
 # css 选择器
 
+[选择器查看](https://baike.baidu.com/item/css%E9%80%89%E6%8B%A9%E5%99%A8/2819686?fr=aladdin#12)
+
 ## 简单选择器
 
 ### ID 选择器
@@ -33,7 +35,8 @@ p {
 ### 属性选择器
 
 ```css
-[id="Attribute"] {}
+[id="Attribute"] {
+}
 ```
 
 ### 伪类选择器
@@ -49,11 +52,13 @@ p {
 6. 子元素第一指定类型元素：first-of-type
 7. 最后一个子元素：last-child
 8. 子元素最后一个指定类型的元素：last-of-type
-9. 选中指定的几个子元素：nth-child(n)  even:等同于2n   odd等同于2n+1
+9. 选中指定的几个子元素：nth-child(n) even:等同于 2n odd 等同于 2n+1
 10. 选中指定的几个类型的子元素：nth-of-type
-> 含type的选择器忽略其他元素
+    > 含 type 的选择器忽略其他元素
+
 ```css
-div:hover {}
+div:hover {
+}
 ```
 
 ### 伪元素选择器
@@ -63,8 +68,6 @@ div:hover {}
 3. 选中元素中的第一个字：first-letter
 4. 选中元素中第一行的文字：first-line
 5. 选中被用户框选的文字：selection
-
-可以使用 content 属性添加文本内容，并且 content 只能在伪元素中使用
 
 ```css
 ::before {
@@ -103,15 +106,15 @@ span {
 ```
 
 ### 兄弟选择器
+
 ```css
-div+i{}
+div + i {
+}
 ```
 
+# css 样式
 
-
-
-# css样式
-[CSS速查词典](https://www.w3cschool.cn/css/dict)
+[CSS 速查词典](https://www.w3cschool.cn/css/dict)
 
 # 层叠
 
@@ -510,36 +513,37 @@ z-index 可以是负数，如果是负数，则常规流
 - 绝对定位、固定定位元素一定不是浮动
 - 没有外边距合并
 
-
 ## 属性补充
 
 - 透明(alpha)
-每个颜色都具有透明通道，0~1
+  每个颜色都具有透明通道，0~1
+
 1. rgba(红,绿,蓝,透);
 2. hex:#红绿蓝透
 
-
 # 盒子隐藏
+
 1. display:none; 不生成盒子，有可能改变其他盒子的布局
 2. visibility：hidden；生成盒子，不影响盒子类型，从视觉上移除盒子。
 
 # 美化表单元素
+
 ## 新的伪类
 
 1. focus
- 
+
 元素聚焦时的样式
 
 2. checked
-   
+
 单选或多选框被选中的样式
 
 ## 常见用法
 
 1. 重置表单元素样式 (myform.css)
-2. 设置textarea是否允许调整尺寸
+2. 设置 textarea 是否允许调整尺寸
 
-css属性resize:
+css 属性 resize:
 
 - both:默认值，两个方向都可以调整尺寸
 - noone:不能调整尺寸
@@ -548,8 +552,62 @@ css属性resize:
 
 3. 文本框到边缘的距离
 
-- 设置padding
-- 设置text-indent
+- 设置 padding
+- 设置 text-indent
 
 4. 控制单选和多选的样式
-详情[表单美化练习](demo/6.表单美化练习/index.html)
+   详情[表单美化练习](demo/6.表单美化练习/index.html)
+
+# @规则
+
+1. @inport
+
+@inport "路径"
+
+导入另外一个 CSS 文件
+
+2. charset
+
+@charset "utf-8"
+
+告诉浏览器该 CSS 文件，使用的字符编码集是 utf-8,必须写在第一行。
+
+# web 字体和图标
+
+解决用户电脑上没有安装相应字体，强制让用户下载该字体
+
+使用[@font0face](./demo/10.WEB字体/index.html)制作一个新字体
+
+# [字体图标](./demo/11.字体图标/index.html)
+
+# 块机格式化上下文
+
+全称 Block Formatting Context，简称 BFC
+
+它是一块独立的渲染区域,它规定了在该区域中，常规流块盒的布局
+
+- 常规流块盒在水平方向上，必须撑满包含块
+- 常规流块盒在包含块的垂直方向上依次摆放
+- 常规流块盒若外边距无缝相邻，则进行外边距合并
+- 常规流块盒的自动高度和摆放位置，无视浮动元素
+
+## BFC 渲染区域：
+
+这个区域由某个 HTML 元素场景，以下元素会在其内部创建 BFC 区域：
+
+- 根元素 意味着，<html>元素创建的 BFC 区域，覆盖了网页中所有的元素
+- 浮动盒，绝对定位元素
+- overflow 不等于 visible 的块盒
+
+## 独立的渲染区域
+
+不同的 BFC 区域，它们进行渲染时互不干扰
+创建 BFC 的元素，隔绝了它内部和外部的联系，内部的渲染不会影响到外部
+
+### 具体规则
+
+1. 创建 BFC 的元素，它的自动高度需要计算浮动元素
+2. 创建 BFC 的元素，他的边框盒不会与浮动价格元素重叠
+3. 创建 BFC 的元素，不会和它的子元素进行外边距合并
+
+创建 BFC 通常使用 overflow:hidden
