@@ -578,7 +578,7 @@ css 属性 resize:
 
 使用[@font0face](./demo/10.WEB字体/index.html)制作一个新字体
 
-# [字体图标](./demo/11.字体图标/index.html)
+## [字体图标](./demo/11.字体图标/index.html)
 
 # 块机格式化上下文
 
@@ -610,4 +610,4 @@ css 属性 resize:
 2. 创建 BFC 的元素，他的边框盒不会与浮动价格元素重叠
 3. 创建 BFC 的元素，不会和它的子元素进行外边距合并
 
-创建 BFC 通常使用 overflow:hidden
+# 布局
