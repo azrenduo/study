@@ -611,3 +611,18 @@ css 属性 resize:
 3. 创建 BFC 的元素，不会和它的子元素进行外边距合并
 
 # 布局
+
+## 布局
+
+[两栏布局](./demo/12.两栏布局/index.html)
+
+[三栏布局](./demo/13.三栏布局/index.html)
+
+[主区域书写靠前](./demo/14.主区域代码靠前书写布局/index.html)
+
+[后台布局](./demo/15.后台布局/CSS/index.html)
+
+## 等高布局
+ 1. CSS3弹性盒
+ 2. JS控制
+ 3. [伪等高](./demo/16.等高布局/index.html)
