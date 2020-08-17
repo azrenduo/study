@@ -221,7 +221,7 @@ pre 元素功能的本质：它有一个默认的 css 属性(white-space:pre;)
 
 实体字符： HTML Entity
 
-实体字符通常用于在页面中显示一些特殊符号。(https://dev.w3.org/html5/html-author/charref)
+实体字符通常用于在页面中显示一些特殊符号。[实体字符](https://dev.w3.org/html5/html-author/charref)
 
 1. &单词;
 2. &数字;
