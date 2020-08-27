@@ -125,11 +125,12 @@ for (var i = 1; i < 10; i++) {
 
 for (var i = 2; i < 100; i++) {
     flag = true;
-    for(var j =2; j<i;j++){
+    for (var j = 2; j <= Math.sqrt(i); j++) {
         if (i % j == 0) {
             //如果num能被i整除，则说明num一定不是质数
-    
+
             //设置flag为false
+            document.write(i);
             flag = false;
             break;
         }
