@@ -525,7 +525,7 @@ embed
 
 ```html
 <object data="" type="">
-<embed data="" type="">
+  <embed data="" type="" />
 </object>
 ```
 
@@ -567,248 +567,64 @@ type 为 reset(重置)、button(普通按钮)、submit(提交)时，input 表示
 ## textarea 元素
 
 文本域，多行文本框
-> cols横向多少个文字
+
+> cols 横向多少个文字
 > rows 纵向多少行
-没有空白折叠
+> 没有空白折叠
 
+## button 元素
 
-## button元素
-
-type属性：reset、button、submit默认值submit
+type 属性：reset、button、submit 默认值 submit
 
 ## 表单状态
 
-readonly属性 只读 布尔属性 不会改变表单显示样式
-disabled属性 是否禁用 布尔属性 改变表单显示样式
+readonly 属性 只读 布尔属性 不会改变表单显示样式
+disabled 属性 是否禁用 布尔属性 改变表单显示样式
 
 ## 配合表单元素的其他元素
 
 ### label
 
 普通元素，通常配合单选盒多选框使用
+
 - 显示关联
-通过for属性关联表单元素的id
+  通过 for 属性关联表单元素的 id
 - 隐式关联
 
 ```html
 <label>
-<input type="radio" value="demo">
+  <input type="radio" value="demo" />
 </label>
 ```
 
 ### datalist
 
 该元素本身不会显示到页面，通常用于和普通文本框配合
-input的list属性可以通过id查询datalist的option内容
+input 的 list 属性可以通过 id 查询 datalist 的 option 内容
 
+### form 元素
 
-### form元素
-通常，会将整个表单元素，放置form元素的内部，作用是当提交表单是，会将form元素内部的表单内容以合适的方式提交到服务器。
+通常，会将整个表单元素，放置 form 元素的内部，作用是当提交表单是，会将 form 元素内部的表单内容以合适的方式提交到服务器。
 
-表单元素必须写name属性
+表单元素必须写 name 属性
 
-form元素对开发静态页面没有什么意义
+form 元素对开发静态页面没有什么意义
 
 action 提交给谁，不写时默认为提交给本地
 method 提交方式
-  - post
-  - get
+
+- post
+- get
 
 ### fieldest 元素
 
 表单分组
 
-legend作为子元素表示分组的标题
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+legend 作为子元素表示分组的标题
 
 # 表格元素
 
-在CSS出现之前，网页通常使用表格布局
+在 CSS 出现之前，网页通常使用表格布局
 
 后台管理系统中可能会使用表格。
 
@@ -820,3 +636,4 @@ legend作为子元素表示分组的标题
 表格的渲染速度过慢。
 
 ## [表格](./demo/7.表格练习/index.html)
+
